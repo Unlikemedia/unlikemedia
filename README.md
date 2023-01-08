@@ -1,5 +1,5 @@
 ### Hi there 👋
-
+Unlikemedia aims to prove the benefit of using Artificial Intelligence in all forms of marketing operations from writing copy, creating CRM systems and analysing big datasets. 
 <!--
 **Unlikemedia/unlikemedia** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
