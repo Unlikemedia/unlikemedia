@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <style>
+      /* Add some style to the page */
+      body {
+        background-color: black;
+        color: white;
+        font-family: monospace;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      /* Add some animation to the matrix code background */
+      .matrix {
+        animation: matrix-animation 50s linear infinite;
+      }
+      @keyframes matrix-animation {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 1000px;
+        }
+      }
+
+      /* Add some animation to the text being typed */
+      .typed-text {
+        animation: typing 3s linear infinite;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add a matrix code background to the page -->
+    <div class="matrix" style="background-image: url(https://i.imgur.com/fZT0Q2T.png);"></div>
+
+    <!-- Add some text that will be typed onto the screen -->
+    <div class="typed-text">Welcome to my website!</div>
+
+    <!-- Add some JavaScript to animate the zoom effect -->
+    <script>
+      // Get a reference to the typed text element
+      var typedText = document.querySelector('.typed-text');
+
+      // Set the initial font size to 0
+      typedText.style.fontSize = '0px';
+
+      // Use setInterval to gradually increase the font size
+      var interval = setInterval(function() {
+        // Get the current font size
+        var fontSize = parseInt(typedText.style.fontSize);
+
+        // Increase the font size by 1px
+        typedText.style.fontSize = (fontSize + 1) + 'px';
+
+        // If the font size is greater than or equal to 16px, stop the interval
+        if (fontSize >= 16) {
+          clearInterval(interval);
+        }
+      }, 50);
+    </script>
+  </body>
+</html>
